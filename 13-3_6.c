@@ -7,9 +7,10 @@ int main()
     int n;
     int *arr;
     int *result;
+    int insertPoint = 1;
 
-    arr = (int *)malloc(sizeof(int) * 4);
-    result = (int *)malloc(sizeof(int) * 4);
+    arr = (int *)malloc(sizeof(int) * 100);
+    result = (int *)malloc(sizeof(int) * 100);
 
     result[0] = 2;
 
@@ -22,13 +23,15 @@ int main()
 
     for (int i = 3; i <= n; i++)
     {
-        for (int j = 0; j < n / 2; j++)
+        for (int j = 0; j < insertPoint; j++)
         {
-            if (arr[i] / result[j] != 0)
+            if (arr[i] % result[j] != 0)
             {
-                if (j == n / 2)
+                if (j == insertPoint - 1)
                 {
-                    result[n / 2] = arr[i];
+                    result[insertPoint] = i;
+                    insertPoint++;
+                    break;
                 }
                 continue;
             }
@@ -39,10 +42,13 @@ int main()
         }
     }
 
-    for (int i = 0; i < n / 2; i++)
+    for (int i = 0; i < insertPoint ; i++)
     {
         printf("%d ", result[i]);
     }
+
+    free(arr);
+    free(result);
 
     return 0;
 }
