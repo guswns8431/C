@@ -71,5 +71,5 @@ int main()
 
     printPorF(average, &totalAverage);
 
-    return 0;
+    return (0);
 }
