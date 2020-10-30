@@ -28,5 +28,5 @@ int main()
 
     printf("%d", b);
 
-    return 0;
+    return (0);
 }
