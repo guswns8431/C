@@ -44,5 +44,5 @@ int main()
 
     printf("%d", getPrime(n));
 
-    return 0;
+    return (0);
 }
