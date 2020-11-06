@@ -27,5 +27,5 @@ int main()
     getLength(str,&len);
     printReverse(str,len);
 
-    return 0;
+    return (0);
 }
