@@ -11,7 +11,10 @@ char				*ft_strncpy(char *dest, char *src, unsigned int n)
 	{
 		*dest = *src;
 		dest++;
-		src++;
+		if (*src)
+		{
+			src++;
+		}
 		i++;
 	}
 	return (tmp);
