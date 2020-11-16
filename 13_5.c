@@ -32,5 +32,5 @@ int main()
 
     factorize(n);
 
-    return 0;
+    return (0);
 }
