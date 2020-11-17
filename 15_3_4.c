@@ -52,5 +52,5 @@ int main()
 
     getPosition(input1,input2);
 
-    return 0;
+    return (0);
 }
