@@ -36,5 +36,5 @@ int main()
 
     compareStr(a,b);
 
-    return 0;
+    return (0);
 }
