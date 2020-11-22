@@ -17,5 +17,5 @@ int main()
 
     printf("%d",mul);
 
-    return 0;
+    return (0);
 }
