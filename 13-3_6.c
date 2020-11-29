@@ -50,5 +50,5 @@ int main()
     free(arr);
     free(result);
 
-    return 0;
+    return (0);
 }
